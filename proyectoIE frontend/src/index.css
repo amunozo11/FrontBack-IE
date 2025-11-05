@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Updated to professional futuristic design with emerald color scheme */
+:root {
+  color-scheme: dark;
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --card: #1e293b;
+  --card-foreground: #f1f5f9;
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+  --secondary: #10b981;
+  --secondary-foreground: #ffffff;
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --accent: #10b981;
+  --accent-foreground: #ffffff;
+  --border: #334155;
+  --input: #1e293b;
+  --ring: rgba(16, 185, 129, 0.3);
+  --radius: 0.75rem;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  min-height: 100vh;
+}
+
+/* Modern card design with glass morphism effect */
+.card {
+  @apply bg-slate-800/80 backdrop-blur-xl rounded-xl p-6 shadow-2xl border border-slate-700/50;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(51, 65, 85, 0.7) 100%);
+}
+
+/* Professional button styling with emerald theme */
+.btn {
+  @apply px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-all duration-300 shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-semibold transition-all duration-300 shadow-lg border border-slate-600;
+}
+
+/* Enhanced input fields with modern styling */
+.input {
+  @apply w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-300 text-slate-100 placeholder-slate-400;
+}
+
+.select {
+  @apply w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-300 text-slate-100;
+}
+
+/* Modern label styling */
+.label {
+  @apply text-sm font-medium text-slate-300 mb-2 block;
+}
+
+/* Enhanced grid layout for cards */
+.grid-cards {
+  @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+/* Professional result display */
+.result-card {
+  @apply bg-emerald-900/30 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm;
+}
+
+.error-card {
+  @apply bg-red-900/30 border border-red-500/30 rounded-xl p-4 text-red-200;
+}
+
+/* Enhanced typography and spacing */
+hr {
+  @apply border-slate-600 my-6;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  @apply bg-slate-900/50 rounded-lg p-4 text-sm;
+}
+
+/* Loading animation */
+.loading {
+  @apply animate-pulse;
+}
+
+/* Currency display styling */
+.currency {
+  @apply font-mono text-emerald-400 font-semibold;
+}
+
+/* Professional metric cards */
+.metric-card {
+  @apply bg-gradient-to-br from-slate-800/90 to-slate-700/90 rounded-xl p-4 border border-slate-600/50 hover:border-emerald-500/50 transition-all duration-300;
+}
